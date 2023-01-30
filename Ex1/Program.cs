@@ -16,15 +16,15 @@ int Degree(int a, int b)
     }
     return result;
 }
-int PromptNumber(string text)
+int GetNumber(string text)
 {
     Console.Write(text);
     int number = int.Parse(Console.ReadLine());
     return number;
 }
 
-int numberA = PromptNumber("Введите число: ");
-int numberB = PromptNumber("Введите число ");
+int numberA = GetNumber("Введите число: ");
+int numberB = GetNumber("Введите число ");
 
 int NaturalDegree = Degree(numberA, numberB);
 
