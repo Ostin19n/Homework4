@@ -9,14 +9,14 @@
 
 int SumNumber(int numberN)
   {  
-    int counter = Convert.ToString(numberN).Length;
-    int advance = 0;
+    int a = Convert.ToString(numberN).Length;
+    int b = 0;
     int result = 0;
 
-    for (int i = 0; i < counter; i++)
+    for (int i = 0; i < a; i++)
     {
-      advance = numberN - numberN % 10;
-      result = result + (numberN - advance);
+      b = numberN - numberN % 10;
+      result = result + (numberN - b);
       numberN = numberN / 10;
     }
      return result;
